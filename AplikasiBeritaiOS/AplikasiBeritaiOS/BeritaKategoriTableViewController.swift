@@ -10,7 +10,7 @@ import UIKit
 
 class BeritaKategoriTableViewController: UITableViewController {
     //deklarasi variable untuk menampung id yang di kirim
-    var nampungId : String = ""
+    var nampungId : String? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
