@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5800F4F59D69968837645C05 /* Pods_AplikasiBeritaiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8388DB54BFCA65CDEDBB2537 /* Pods_AplikasiBeritaiOS.framework */; };
+		9A547C261FBACE6C0057B825 /* KategoriTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A547C251FBACE6C0057B825 /* KategoriTableViewCell.swift */; };
+		9A547C281FBACE7E0057B825 /* KategoriTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A547C271FBACE7E0057B825 /* KategoriTableViewController.swift */; };
+		9A547C2A1FBACE940057B825 /* BeritaKategoriTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A547C291FBACE940057B825 /* BeritaKategoriTableViewController.swift */; };
+		9A547C2C1FBACEA70057B825 /* BeritaKategoriTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A547C2B1FBACEA70057B825 /* BeritaKategoriTableViewCell.swift */; };
+		9A9B5BDF1FBAB07F0048CE46 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B5BDE1FBAB07F0048CE46 /* HomeTableViewController.swift */; };
+		9A9B5BE11FBABFA40048CE46 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B5BE01FBABFA40048CE46 /* HomeTableViewCell.swift */; };
 		9ACB0DC11FBAA214009C25E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB0DC01FBAA214009C25E5 /* AppDelegate.swift */; };
 		9ACB0DC31FBAA214009C25E5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB0DC21FBAA214009C25E5 /* FirstViewController.swift */; };
 		9ACB0DC51FBAA214009C25E5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB0DC41FBAA214009C25E5 /* SecondViewController.swift */; };
@@ -35,6 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7049DBD56BE426E5F77915A1 /* Pods-AplikasiBeritaiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AplikasiBeritaiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AplikasiBeritaiOS/Pods-AplikasiBeritaiOS.release.xcconfig"; sourceTree = "<group>"; };
+		8388DB54BFCA65CDEDBB2537 /* Pods_AplikasiBeritaiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AplikasiBeritaiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A547C251FBACE6C0057B825 /* KategoriTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KategoriTableViewCell.swift; sourceTree = "<group>"; };
+		9A547C271FBACE7E0057B825 /* KategoriTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KategoriTableViewController.swift; sourceTree = "<group>"; };
+		9A547C291FBACE940057B825 /* BeritaKategoriTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeritaKategoriTableViewController.swift; sourceTree = "<group>"; };
+		9A547C2B1FBACEA70057B825 /* BeritaKategoriTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeritaKategoriTableViewCell.swift; sourceTree = "<group>"; };
+		9A9B5BDE1FBAB07F0048CE46 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		9A9B5BE01FBABFA40048CE46 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		9ACB0DBD1FBAA214009C25E5 /* AplikasiBeritaiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AplikasiBeritaiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ACB0DC01FBAA214009C25E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ACB0DC21FBAA214009C25E5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +64,7 @@
 		9ACB0DDE1FBAA214009C25E5 /* AplikasiBeritaiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AplikasiBeritaiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ACB0DE21FBAA214009C25E5 /* AplikasiBeritaiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AplikasiBeritaiOSUITests.swift; sourceTree = "<group>"; };
 		9ACB0DE41FBAA214009C25E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA123E67FCA7BCF8AD6DE7D5 /* Pods-AplikasiBeritaiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AplikasiBeritaiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AplikasiBeritaiOS/Pods-AplikasiBeritaiOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5800F4F59D69968837645C05 /* Pods_AplikasiBeritaiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		671F3A1A32D41DF7FB9E495F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA123E67FCA7BCF8AD6DE7D5 /* Pods-AplikasiBeritaiOS.debug.xcconfig */,
+				7049DBD56BE426E5F77915A1 /* Pods-AplikasiBeritaiOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9ACB0DB41FBAA214009C25E5 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +109,8 @@
 				9ACB0DD61FBAA214009C25E5 /* AplikasiBeritaiOSTests */,
 				9ACB0DE11FBAA214009C25E5 /* AplikasiBeritaiOSUITests */,
 				9ACB0DBE1FBAA214009C25E5 /* Products */,
+				671F3A1A32D41DF7FB9E495F /* Pods */,
+				C6DC28160C92010840FD444F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +134,12 @@
 				9ACB0DC91FBAA214009C25E5 /* Assets.xcassets */,
 				9ACB0DCB1FBAA214009C25E5 /* LaunchScreen.storyboard */,
 				9ACB0DCE1FBAA214009C25E5 /* Info.plist */,
+				9A9B5BDE1FBAB07F0048CE46 /* HomeTableViewController.swift */,
+				9A9B5BE01FBABFA40048CE46 /* HomeTableViewCell.swift */,
+				9A547C251FBACE6C0057B825 /* KategoriTableViewCell.swift */,
+				9A547C271FBACE7E0057B825 /* KategoriTableViewController.swift */,
+				9A547C291FBACE940057B825 /* BeritaKategoriTableViewController.swift */,
+				9A547C2B1FBACEA70057B825 /* BeritaKategoriTableViewCell.swift */,
 			);
 			path = AplikasiBeritaiOS;
 			sourceTree = "<group>";
@@ -128,6 +162,14 @@
 			path = AplikasiBeritaiOSUITests;
 			sourceTree = "<group>";
 		};
+		C6DC28160C92010840FD444F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8388DB54BFCA65CDEDBB2537 /* Pods_AplikasiBeritaiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9ACB0DE71FBAA214009C25E5 /* Build configuration list for PBXNativeTarget "AplikasiBeritaiOS" */;
 			buildPhases = (
+				000C5FC8EFE91BF1DCA4A688 /* [CP] Check Pods Manifest.lock */,
 				9ACB0DB91FBAA214009C25E5 /* Sources */,
 				9ACB0DBA1FBAA214009C25E5 /* Frameworks */,
 				9ACB0DBB1FBAA214009C25E5 /* Resources */,
+				3F5306798DB23B1FDB504CA7 /* [CP] Embed Pods Frameworks */,
+				A27FB8D5B7F424140FEB70D4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,14 +302,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		000C5FC8EFE91BF1DCA4A688 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AplikasiBeritaiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F5306798DB23B1FDB504CA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AplikasiBeritaiOS/Pods-AplikasiBeritaiOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AplikasiBeritaiOS/Pods-AplikasiBeritaiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A27FB8D5B7F424140FEB70D4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AplikasiBeritaiOS/Pods-AplikasiBeritaiOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9ACB0DB91FBAA214009C25E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A547C281FBACE7E0057B825 /* KategoriTableViewController.swift in Sources */,
+				9A9B5BDF1FBAB07F0048CE46 /* HomeTableViewController.swift in Sources */,
+				9A547C2C1FBACEA70057B825 /* BeritaKategoriTableViewCell.swift in Sources */,
+				9A9B5BE11FBABFA40048CE46 /* HomeTableViewCell.swift in Sources */,
 				9ACB0DC51FBAA214009C25E5 /* SecondViewController.swift in Sources */,
 				9ACB0DC11FBAA214009C25E5 /* AppDelegate.swift in Sources */,
 				9ACB0DC31FBAA214009C25E5 /* FirstViewController.swift in Sources */,
+				9A547C2A1FBACE940057B825 /* BeritaKategoriTableViewController.swift in Sources */,
+				9A547C261FBACE6C0057B825 /* KategoriTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +535,7 @@
 		};
 		9ACB0DE81FBAA214009C25E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA123E67FCA7BCF8AD6DE7D5 /* Pods-AplikasiBeritaiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,6 +551,7 @@
 		};
 		9ACB0DE91FBAA214009C25E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7049DBD56BE426E5F77915A1 /* Pods-AplikasiBeritaiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
