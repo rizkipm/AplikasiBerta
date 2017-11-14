@@ -63,9 +63,6 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" systemItem="featured" id="JVs-Y9-Pj9"/>
-                    <connections>
-                        <segue destination="2Vr-K7-7nP" kind="modal" id="oGp-1O-JWx"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ab-bt-ZdN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -149,7 +146,7 @@
         <!--Berita Kategori Table View Controller-->
         <scene sceneID="0Gp-Gj-xzv">
             <objects>
-                <tableViewController id="2Vr-K7-7nP" customClass="BeritaKategoriTableViewController" customModule="AplikasiBeritaiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="beritaKategori" id="2Vr-K7-7nP" customClass="BeritaKategoriTableViewController" customModule="AplikasiBeritaiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vjD-ot-m4V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
