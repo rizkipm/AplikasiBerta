@@ -86,7 +86,7 @@ class KategoriTableViewController: UITableViewController {
         
         let id_kategori = arrKategori[indexPath.row]["id_kategori"]
         //variable untuk menampung id_kategori yg d lempar
-        idStoryBoard.nampungId = id_kategori
+        idStoryBoard.nampungId = id_kategori!
         
         show(idStoryBoard, sender: self)
         
