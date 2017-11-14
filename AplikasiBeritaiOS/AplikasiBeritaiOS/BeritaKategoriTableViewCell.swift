@@ -10,6 +10,7 @@ import UIKit
 
 class BeritaKategoriTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var labelKategori: UILabel!
     @IBOutlet weak var imgBerita: UIImageView!
     @IBOutlet weak var labelIsi: UILabel!
     @IBOutlet weak var labelJudul: UILabel!

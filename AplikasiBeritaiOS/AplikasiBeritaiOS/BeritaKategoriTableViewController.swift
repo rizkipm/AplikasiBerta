@@ -21,36 +21,51 @@ class BeritaKategoriTableViewController: UITableViewController {
         
         print("id + " + nampungId!)
         
-        let params = ["first_name" : nampungId!]
-         let url = "http://localhost/ServerBerita/index.php/api/getBeritaByIdKategori"
-
-        Alamofire.request(url, method: .post, parameters: params, encoding: URLEncoding.default, headers: nil).responseJSON(completionHandler: { (response) in
+        if nampungId! == "4" {
+           
+            let alertController = UIAlertController(title: "Warning", message: "Berita Kosong", preferredStyle: .alert)
             
-            //check response
-            if response.result.isSuccess {
+            
+            let defaultAction = UIAlertAction(title: "Close Alert", style: .default, handler: nil)
+            
+            alertController.addAction(defaultAction)
+          
+            present(alertController, animated: true, completion: nil)
+            
+        }else{
+            let params = ["id_kategori" : nampungId!]
+            let url = "http://localhost/ServerBerita/index.php/api/getBeritaByIdKategori"
+            
+            Alamofire.request(url, method: .post, parameters: params, encoding: URLEncoding.default, headers: nil).responseJSON(completionHandler: { (response) in
                 
-                //kalau response success kita ambil json
-                let json = JSON(response.result.value as Any)
-                
-                print(json)
-                //get jsonarray dari json diatas
-                self.arrayberita = json["data"].arrayObject as! [[String : String]]
-                //check di log
-                // print(self.arrayberita)
-                
-                //check jumlah array
-                if(self.arrayberita.count > 0){
+                //check response
+                if response.result.isSuccess {
                     
-                    //refresh tableview
-                    self.tableView.reloadData()
+                    //kalau response success kita ambil json
+                    let json = JSON(response.result.value as Any)
+                    
+                    print(json)
+                    //get jsonarray dari json diatas
+                    self.arrayberita = json["data"].arrayObject as! [[String : String]]
+                    //check di log
+                    // print(self.arrayberita)
+                    
+                    //check jumlah array
+                    if(self.arrayberita.count > 0){
+                        
+                        //refresh tableview
+                        self.tableView.reloadData()
+                    }
                 }
-            }
-            else{
-                
-                print("error server")
-                
-            }
-        })
+                else{
+                    
+                    print("error server")
+                    
+                }
+            })
+        }
+        
+        
     
     }
 
@@ -81,6 +96,7 @@ class BeritaKategoriTableViewController: UITableViewController {
         
         var id =  serverid["id_berita"]
         let judul = serverid["judul"]
+        let nama_kategori = serverid["nama_kategori"]
         let isiBerita = serverid["isi_berita"]
         // print(judul)
         var gambar = serverid["gambar"]
@@ -88,6 +104,7 @@ class BeritaKategoriTableViewController: UITableViewController {
         //pindahkan ke label
         cell.labelJudul.text = judul
         cell.labelIsi.text = isiBerita
+        cell.labelKategori.text = nama_kategori
         
         //download gambar dari server
         

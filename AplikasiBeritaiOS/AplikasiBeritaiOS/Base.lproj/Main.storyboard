@@ -165,9 +165,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="NLr-dm-nkl">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Kategori Berita" id="M6P-0P-Zyg">
+                                    <barButtonItem key="leftBarButtonItem" title="back" id="eY3-ac-eGe">
+                                        <connections>
+                                            <segue destination="49e-Tb-3d3" kind="modal" id="LGG-Ig-mml"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellBeritaKategori" rowHeight="93" id="Hwf-3Q-ldx" customClass="BeritaKategoriTableViewCell" customModule="AplikasiBeritaiOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="93"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="93"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hwf-3Q-ldx" id="21q-9n-Oz5">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="92.5"/>
@@ -198,6 +211,13 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89P-Sd-9Eu">
+                                            <rect key="frame" x="145" y="55" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="1" green="0.1180114558" blue="0.064396599989999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottomMargin" secondItem="6aF-4t-bvg" secondAttribute="bottom" constant="34.5" id="8U2-2E-Znc"/>
@@ -215,10 +235,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="imagePreview" destination="ToF-dR-wb8" id="oBl-uh-o4g"/>
-                                    <outlet property="imgBerita" destination="ToF-dR-wb8" id="dkS-es-lJ8"/>
+                                    <outlet property="imgBerita" destination="ToF-dR-wb8" id="khu-3d-YQO"/>
                                     <outlet property="labelIsi" destination="6aF-4t-bvg" id="q7S-9P-To5"/>
                                     <outlet property="labelJudul" destination="xs2-7J-AV7" id="f1d-Uu-Kvl"/>
+                                    <outlet property="labelKategori" destination="89P-Sd-9Eu" id="VUK-zj-JLH"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
