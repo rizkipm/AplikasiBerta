@@ -21,18 +21,18 @@ class BeritaKategoriTableViewController: UITableViewController {
         
         print("id + " + nampungId!)
         
-        if nampungId! == "4" {
-           
-            let alertController = UIAlertController(title: "Warning", message: "Berita Kosong", preferredStyle: .alert)
-            
-            
-            let defaultAction = UIAlertAction(title: "Close Alert", style: .default, handler: nil)
-            
-            alertController.addAction(defaultAction)
-          
-            present(alertController, animated: true, completion: nil)
-            
-        }else{
+//        if nampungId! == "4" {
+//
+//            let alertController = UIAlertController(title: "Warning", message: "Berita Kosong", preferredStyle: .alert)
+//
+//
+//            let defaultAction = UIAlertAction(title: "Close Alert", style: .default, handler: nil)
+//
+//            alertController.addAction(defaultAction)
+//
+//            present(alertController, animated: true, completion: nil)
+//
+//        }else{
             let params = ["id_kategori" : nampungId!]
             let url = "http://localhost/ServerBerita/index.php/api/getBeritaByIdKategori"
             
@@ -63,7 +63,7 @@ class BeritaKategoriTableViewController: UITableViewController {
                     
                 }
             })
-        }
+//        }
         
         
     
