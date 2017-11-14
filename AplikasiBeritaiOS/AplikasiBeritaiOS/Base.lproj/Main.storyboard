@@ -35,9 +35,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="EtU-Mn-HLM">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Kategori Berita" id="HWz-GS-uP7"/>
+                            </items>
+                        </navigationBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellKategori" rowHeight="52" id="kUc-cL-xxI" customClass="KategoriTableViewCell" customModule="AplikasiBeritaiOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="52"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="52"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kUc-cL-xxI" id="zYi-9P-Rvf">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="51.5"/>
@@ -76,9 +83,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="jsI-Yp-3OC">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Berita Terkini" id="OqB-b6-A0W"/>
+                            </items>
+                        </navigationBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellTable" rowHeight="93" id="emj-Ng-Ghu" customClass="HomeTableViewCell" customModule="AplikasiBeritaiOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="93"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="93"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="emj-Ng-Ghu" id="W1m-Bb-Zh8">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="92.5"/>
