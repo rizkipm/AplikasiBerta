@@ -82,7 +82,24 @@ class HomeTableViewController: UITableViewController {
         
         //download gambar dari server
         
-        // Configure the cell..
+        //download gambar dari server
+        Alamofire.request("http://localhost/ServerBerita/foto_berita/"+gambar!).responseImage { (datagambar) in
+            
+            //check response
+            if datagambar.result.isSuccess {
+                
+                //ambil gambar yang udah dikirim server
+                let gambarserver = datagambar.result.value
+                
+                //tempelin ke image di cell tableview
+                cell.imagePreview.image = gambarserver
+                
+            }
+                //if error
+            else{
+                
+            }
+        }
         return cell
     }
     
