@@ -14,36 +14,21 @@ import SwiftyJSON
 class BeritaKategoriTableViewController: UITableViewController {
     //deklarasi variable untuk menampung id yang di kirim
     var nampungId : String? = nil
+    //deklarasi array berita
     var arrayberita = [[String:String]]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         print("id + " + nampungId!)
-        
-//        if nampungId! == "4" {
-//
-//            let alertController = UIAlertController(title: "Warning", message: "Berita Kosong", preferredStyle: .alert)
-//
-//
-//            let defaultAction = UIAlertAction(title: "Close Alert", style: .default, handler: nil)
-//
-//            alertController.addAction(defaultAction)
-//
-//            present(alertController, animated: true, completion: nil)
-//
-//        }else{
             let params = ["id_kategori" : nampungId!]
             let url = "http://localhost/ServerBerita/index.php/api/getBeritaByIdKategori"
             
             Alamofire.request(url, method: .post, parameters: params, encoding: URLEncoding.default, headers: nil).responseJSON(completionHandler: { (response) in
-                
                 //check response
                 if response.result.isSuccess {
-                    
                     //kalau response success kita ambil json
                     let json = JSON(response.result.value as Any)
-                    
                     print(json)
                     //get jsonarray dari json diatas
                     self.arrayberita = json["data"].arrayObject as! [[String : String]]
@@ -58,15 +43,9 @@ class BeritaKategoriTableViewController: UITableViewController {
                     }
                 }
                 else{
-                    
                     print("error server")
-                    
                 }
             })
-//        }
-        
-        
-    
     }
 
     override func didReceiveMemoryWarning() {
@@ -91,9 +70,7 @@ class BeritaKategoriTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellBeritaKategori", for: indexPath) as! BeritaKategoriTableViewCell
 
         var serverid = arrayberita[indexPath.row]
-        
-        //print(serverid)
-        
+     
         var id =  serverid["id_berita"]
         let judul = serverid["judul"]
         let nama_kategori = serverid["nama_kategori"]
